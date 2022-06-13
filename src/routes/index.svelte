@@ -1,6 +1,6 @@
 <title>Progettazione di sistemi antintrusione | 2F Sicurezza</title>
 <section>
-	<div class="bg-cover bg-[url('img/antifurti-2f-sicurezza-treviglio-001-1920w.webp')]">
+	<div class="bg-cover bg-[url('/img/antifurti-2f-sicurezza-treviglio-001-1920w.webp')]">
 		<div
 			class="font-['Oswald'] tracking-wide text-3xl mr-20 bg-gradient-to-r from-white via-white w-1/2 px-1 py-5 text-gray-800"
 		>
