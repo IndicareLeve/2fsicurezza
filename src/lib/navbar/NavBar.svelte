@@ -29,8 +29,8 @@
 		>
 			<li class="p-4 mx-4 border-t"><a href="/">Home</a></li>
 			<li class="p-4 mx-4 border-t"><a href="/antintrustione">Antintrusione</a></li>
-			<li class="p-4 mx-4 border-t"><a href="/Videosorveglianza">Videosorveglianza</a></li>
-			<li class="p-4 mx-4 border-y"><a href="/Impianti-antincendio">Impianti Antincendio</a></li>
+			<li class="p-4 mx-4 border-t"><a href="/videosorveglianza">Videosorveglianza</a></li>
+			<li class="p-4 mx-4 border-y"><a href="/impianti-antincendio">Impianti Antincendio</a></li>
 		</ul>
 	{/if}
 </header>
