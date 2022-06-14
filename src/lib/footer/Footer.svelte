@@ -118,9 +118,9 @@
 	<section class="bg-2f-blue-500 text-gray-100 pt-4">
 		<ul class="text-center">
 			<li class="p-4 uppercase"><a href="/">Home</a></li>
-			<li class="p-4 uppercase"><a href="/Antintrusione">Antintrusione</a></li>
-			<li class="p-4 uppercase"><a href="/Videosorveglianza">Videosorveglianza</a></li>
-			<li class="p-4 uppercase"><a href="/Impianti-antincendio">Impianti Antincendio</a></li>
+			<li class="p-4 uppercase"><a href="/antintrusione">Antintrusione</a></li>
+			<li class="p-4 uppercase"><a href="/videosorveglianza">Videosorveglianza</a></li>
+			<li class="p-4 uppercase"><a href="/impianti-antincendio">Impianti Antincendio</a></li>
 			<li class="text-sm pt-8">© 2F Sicurezza</li>
 			<li class="text-xs p-2">
 				Built by <a class="underline decoration-double" href="http://indicareleve.me"
