@@ -28,7 +28,7 @@
 			on:click={toggleMenu}
 		>
 			<li class="p-4 mx-4 border-t"><a href="/">Home</a></li>
-			<li class="p-4 mx-4 border-t"><a href="/antintrustione">Antintrusione</a></li>
+			<li class="p-4 mx-4 border-t"><a href="/antintrusione">Antintrusione</a></li>
 			<li class="p-4 mx-4 border-t"><a href="/videosorveglianza">Videosorveglianza</a></li>
 			<li class="p-4 mx-4 border-y"><a href="/impianti-antincendio">Impianti Antincendio</a></li>
 		</ul>

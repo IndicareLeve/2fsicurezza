@@ -10,11 +10,11 @@ module.exports = {
           200: '#d9ebff',
           300: '#3b76a2',
           500: '#014670'
+        }
       }
     }
   },
   plugins: [
     require('@tailwindcss/forms')
   ]
-  }
 }
