@@ -2,11 +2,7 @@
 	import CallUs from '../lib/callus/CallUs.svelte';
 </script>
 
-<img
-	class="sticky top-24 -z-10"
-	src="/img/antifurti-2f-sicurezza-treviglio-003-1920w.webp"
-	alt="sistemi antintrusione"
-/>
+<img class="sticky top-24 -z-10" src="/img/4-2880w.webp" alt="sistemi antincendio" />
 <CallUs />
 <div class="p-5 text-center bg-2f-blue-200">
 	<div class="font-['Oswald'] tracking-wide text-3xl uppercase">
