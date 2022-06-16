@@ -1,11 +1,12 @@
 <script>
 	import { slide } from 'svelte/transition';
+	import { page } from '$app/stores';
 
 	let isMenuOpen = false;
 	const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 </script>
 
-<header class="sticky top-0 shadow-sm bg-white">
+<header class="sticky top-0 shadow-sm bg-white md:hidden">
 	<div class="flex justify-center relative py-2 px-8">
 		<img class="h-20" src="img/logo-8f6a29bc-1920w.jpg" alt="logo 2fsicurezza" />
 		<button type="button" on:click={toggleMenu}>
@@ -34,3 +35,27 @@
 		</ul>
 	{/if}
 </header>
+
+<header class="sticky top-0 shadow-sm bg-white hidden md:block">
+	<div class="flex justify-between py-2 px-8">
+		<img class="h-20" src="img/logo-8f6a29bc-1920w.jpg" alt="logo 2fsicurezza" />
+		<div class="flex items-center text-xl gap-3 font-thin">
+			<a class:active={$page.url.pathname === '/'} href="/">Home</a>
+			<a class:active={$page.url.pathname === '/antintrusione'} href="/antintrusione"
+				>Antintrusione</a
+			>
+			<a class:active={$page.url.pathname === '/videosorveglianza'} href="/videosorveglianza"
+				>Videosorveglianza</a
+			>
+			<a class:active={$page.url.pathname === '/impianti-antincendio'} href="/impianti-antincendio"
+				>Impianti antincendio</a
+			>
+		</div>
+	</div>
+</header>
+
+<style>
+	.active {
+		@apply underline underline-offset-8;
+	}
+</style>

@@ -1,7 +1,9 @@
-<footer>
+<footer class="pt-12">
 	<section class="contact-section">
 		<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
-			<span class="font-bold text-3xl">Contattaci per informazioni o un preventivo gratuito!</span>
+			<span class="font-bold text-3xl md:text-center"
+				>Contattaci per informazioni o un preventivo gratuito!</span
+			>
 			<form class="grid grid-cols-1 gap-6">
 				<input
 					type="text"

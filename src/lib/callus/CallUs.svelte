@@ -1,4 +1,4 @@
-<div class="bg-2f-blue-500 px-3 py-5">
+<div class="bg-2f-blue-500 px-3 py-5 md:hidden">
 	<a
 		href="tel:+393395676172"
 		class="flex justify-center px-3 py-2 bg-white rounded-sm font-medium w-full"
