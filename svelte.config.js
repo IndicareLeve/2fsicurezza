@@ -9,15 +9,15 @@ const config = {
 		postcss: true
 	}),
 	kit: {
-		adapter: adapter()
-	},
-	prerender: {
-		concurrency: 1,
-		crawl: true,
-		default: true,
-		enabled: true,
-		entries: ['*'],
-		onError: 'fail'
+		adapter: adapter(),
+		prerender: {
+			concurrency: 1,
+			crawl: true,
+			default: true,
+			enabled: true,
+			entries: ['*'],
+			onError: 'fail'
+		}
 	}
 };
 
