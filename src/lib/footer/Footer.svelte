@@ -35,7 +35,7 @@
 					class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black md:col-span-2"
 					placeholder="Il tuo messaggio"
 				/>
-				<button class="flex w-max bg-2f-blue-500 p-2 rounded-sm" type="submit"
+				<button class="flex w-max bg-2f-blue-500 p-2 rounded-sm"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-6 w-6 text-white"

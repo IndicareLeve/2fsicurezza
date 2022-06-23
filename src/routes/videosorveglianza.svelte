@@ -55,7 +55,7 @@
 	</p>
 	<ul class="list-disc list-inside p-3">
 		<li>
-			Segnale audio a doppia via: il che consente di far interagire l’utente con quello che vede
+			Segnale audio a doppia via: il che consente di far interagire l'utente con quello che vede
 		</li>
 		<li>
 			Possibilità di sfruttare risoluzioni più elevate, a partire dalla risoluzione 640X480 ad
