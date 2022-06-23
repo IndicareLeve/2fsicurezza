@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/4-2880w.webp')]"
+	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/antincendio/AdobeStock_507564262.jpeg')]"
 />
 <CallUs />
 <Siterow

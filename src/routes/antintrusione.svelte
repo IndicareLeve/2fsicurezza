@@ -73,7 +73,7 @@
 </script>
 
 <div
-	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/antifurti-2f-sicurezza-treviglio-002-1920w.webp')]"
+	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/AdobeStock_129501064.jpeg')]"
 />
 <CallUs />
 <Siterow
