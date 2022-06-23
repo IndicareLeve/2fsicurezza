@@ -4,7 +4,7 @@
 			<span class="font-bold text-3xl md:text-center"
 				>Contattaci per informazioni o un preventivo gratuito!</span
 			>
-			<form class="grid grid-cols-1 gap-6" name="2f-contatti" method="POST" data-netlify="true">
+			<form class="grid grid-cols-1 gap-6" name="2f-contatti" method="POST" netlify>
 				<input
 					type="text"
 					placeholder="Nome"
