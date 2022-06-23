@@ -1,3 +1,7 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <footer class="pt-12">
 	<section class="contact-section">
 		<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
@@ -6,11 +10,13 @@
 			>
 			<form class="grid grid-cols-1 gap-6" name="2f-contatti" method="POST" netlify>
 				<input
+					name="name"
 					type="text"
 					placeholder="Nome"
 					class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
 				/>
 				<input
+					name="email"
 					type="email"
 					placeholder="Email"
 					class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
@@ -18,6 +24,7 @@
 				<textarea
 					cols="30"
 					rows="3"
+					name="message"
 					class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black"
 					placeholder="Il tuo messaggio"
 				/>

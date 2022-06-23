@@ -101,10 +101,3 @@
 		<img src="/img/lavori/HelloIMG1655222601555.jpeg" alt="i nostri lavori 21" />
 	</div>
 </div>
-
-<style>
-	.carousel {
-		height: 100%;
-		object-fit: cover;
-	}
-</style>
