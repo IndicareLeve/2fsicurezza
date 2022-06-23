@@ -11,12 +11,10 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
-			concurrency: 1,
 			crawl: true,
-			default: true,
 			enabled: true,
-			entries: ['*'],
-			onError: 'fail'
+			onError: 'continue',
+			entries: ['*']
 		}
 	}
 };
