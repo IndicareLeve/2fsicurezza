@@ -4,7 +4,7 @@
 			<span class="font-bold text-3xl md:text-center"
 				>Contattaci per informazioni o un preventivo gratuito!</span
 			>
-			<form class="grid grid-cols-1 gap-6">
+			<form class="grid grid-cols-1 gap-6" name="2f-contatti" method="POST" data-netlify="true">
 				<input
 					type="text"
 					placeholder="Nome"
@@ -21,7 +21,7 @@
 					class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black"
 					placeholder="Il tuo messaggio"
 				/>
-				<button class="flex w-max bg-2f-blue-500 p-2 rounded-sm"
+				<button class="flex w-max bg-2f-blue-500 p-2 rounded-sm" type="submit"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-6 w-6 text-white"

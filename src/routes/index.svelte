@@ -15,7 +15,7 @@
 	</div>
 </div>
 <CallUs />
-<Siterow bg_color="2f-blue-200">
+<Siterow bg_color="bg-2f-blue-200">
 	2F Sicurezza di Treviglio è un'azienda specializzata nella posa, programmazione e gestione di
 	impianti antintrusione, sistemi di videosorveglianza e videocitofoni. Competenza, professionalità,
 	anni di esperienza nel settore la rendono una realtà a cui affidarsi per mettere in sicurezza la
@@ -30,7 +30,7 @@
 	antifurto del tutto personalizzabili, per mantenere il totale controllo della propria privacy. Per
 	mettere in sicurezza la tua casa o la tua azienda affidati alla nostra competenza.
 </Siterow>
-<div class="p-5 bg-white ">
+<div class="p-5 bg-white">
 	<div class="text-3xl text-center font-['Oswald'] tracking-wide uppercase">I nostri marchi</div>
 	<div class="grid grid-cols-2 pt-5 justify-items-center container mx-auto">
 		<img class="h-10" src="/img/logo-combivox.png" alt="logo combivox" />
@@ -41,7 +41,7 @@
 <Siterow
 	title="Progettazione di sistemi antintrusione"
 	link="/antintrusione"
-	bg_color="2f-blue-200"
+	bg_color="bg-2f-blue-200"
 >
 	2F Sicurezza propone specifici servizi per la messa in sicurezza di qualsiasi spazio abitativo o
 	luogo di lavoro quali sistemi antintrusione, videocitofoni e sistemi di videosorveglianza,

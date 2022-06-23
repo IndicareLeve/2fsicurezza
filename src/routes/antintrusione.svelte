@@ -79,7 +79,7 @@
 <Siterow
 	title="Sistemi antintrusione per abitazioni e aziende in lombardia"
 	link="/videosorveglianza"
-	bg_color="2f-blue-200"
+	bg_color="bg-2f-blue-200"
 >
 	2F Sicurezza propone specifici servizi per la messa in sicurezza di qualsiasi spazio abitativo o
 	luogo di lavoro quali sistemi antintrusione, videocitofoni e sistemi di videosorveglianza,
@@ -92,7 +92,7 @@
 	impercettibile ad occhio umano. Tutti i prodotti 2F Sicurezza, tra i migliori sul mercato, sono
 	garantiti e certificati nonché conformi alle normative in materia.
 </Siterow>
-<Siterow title="Antifurto senza fili" bg_color="gray-100">
+<Siterow title="Antifurto senza fili" bg_color="bg-gray-100">
 	2F Sicurezza, specializzata in sistemi antintrusione, offre un'ampia gamma di impianti di
 	sorveglianza per proteggere qualsiasi spazio abitativo o luogo di lavoro. Tra questi propone
 	dispositivi di antifurto senza fili. Si tratta di una nuova tecnologia che sfrutta la

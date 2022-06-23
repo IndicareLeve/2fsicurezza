@@ -1,10 +1,10 @@
 <script lang="ts">
 	export let title = '';
 	export let link = '';
-	export let bg_color = 'white';
+	export let bg_color = 'bg-white';
 </script>
 
-<div class="p-5 text-center bg-{bg_color}">
+<div class="p-5 text-center {bg_color}">
 	<div class="font-['Oswald'] tracking-wide text-3xl uppercase">
 		{title}
 	</div>

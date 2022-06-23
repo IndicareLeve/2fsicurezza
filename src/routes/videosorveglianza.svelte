@@ -10,7 +10,7 @@
 <Siterow
 	title="Vendita telecamere di videosorveglianza con tecnologia IP in Lombardia"
 	link="/antintrusione"
-	bg_color="2f-blue-200"
+	bg_color="bg-2f-blue-200"
 >
 	2F Sicurezza, a Treviglio, è un'azienda leader nella realizzazione di sistemi di videosorveglianza
 	con tecnologia IP. Con il termine videosorveglianza si intende l'attività del vigilare un luogo a
@@ -22,7 +22,7 @@
 	usufruisce di controllare la propria casa o la propria azienda tramite internet, smartphone ed
 	altri dispositivi.
 </Siterow>
-<Siterow title="Domotica intelligente" bg_color="gray-100">
+<Siterow title="Domotica intelligente" bg_color="bg-gray-100">
 	<p class="text-base leading-relaxed pt-2">
 		2F Sicurezza opera nel campo della domotica fornendo soluzioni integrate di videosorveglianza
 		grazie all'uso della tecnologia IP per un controllo assolutamente sicuro della propria
@@ -46,7 +46,7 @@
 		immesso in rete.
 	</p>
 </Siterow>
-<Siterow title="I vantaggi delle telecamere IP" bg_color="2f-blue-200">
+<Siterow title="I vantaggi delle telecamere IP" bg_color="bg-2f-blue-200">
 	<p class="text-base leading-relaxed pt-2">
 		La tecnologia IP nella videosorveglianza consente non solo una risoluzione molto superiore
 		all'uso delle classiche telecamere analogiche che può arrivare anche a 12MP (mega pixel), con
@@ -77,7 +77,7 @@
 
 <div class="p-5 text-center bg-white">
 	<div class="font-['Oswald'] tracking-wide text-3xl uppercase">I nostri lavori</div>
-	<div class="pt-2 flex overflow-x-scroll gap-5">
+	<div class="pt-2 flex overflow-x-scroll gap-5 h-[70vh] overflow-hidden">
 		<img src="/img/lavori/HelloIMG1655222543305.jpeg" alt="i nostri lavori 1" />
 		<img src="/img/lavori/HelloIMG1655222558339.jpeg" alt="i nostri lavori 2" />
 		<img src="/img/lavori/HelloIMG1655222567280.jpeg" alt="i nostri lavori 3" />
@@ -101,3 +101,10 @@
 		<img src="/img/lavori/HelloIMG1655222601555.jpeg" alt="i nostri lavori 21" />
 	</div>
 </div>
+
+<style>
+	.carousel {
+		height: 100%;
+		object-fit: cover;
+	}
+</style>

@@ -9,14 +9,14 @@
 <CallUs />
 <Siterow
 	title="Progettazione, installazione e manutenzione di impianti antincendio in Lombardia"
-	bg_color="2f-blue-200"
+	bg_color="bg-2f-blue-200"
 >
 	2F Sicurezza a Treviglio è un punto di riferimento anche per tutto ciò che riguarda gli impianti
 	antincendio, con interventi per l'installazione e la manutenzione dei sistemi messi a punto dalle
 	migliori marche, tra cui, in particolare, gli impianti Ochiki, completi di sistemi di rilevazione
 	incendio e spegnimento e dotati delle ultime tecnologie oggi disponibili sul mercato.
 </Siterow>
-<Siterow title="Come funziona un impianto antincendio" bg_color="gray-100">
+<Siterow title="Come funziona un impianto antincendio" bg_color="bg-gray-100">
 	Installare un impianto antincendio consente di mettere in sicurezza un edificio: questi
 	apparecchi, infatti, per prima cosa permettono di rilevare e quindi di intervenire il più
 	rapidamente possibile in caso di deflagrazione. Per reagire immediatamente, inoltre, gli impianti
@@ -27,7 +27,7 @@
 	antincendio di tutte le tipologie, grazie a uno staff preparato e competente, sempre al servizio del
 	cliente per interventi personalizzati nonché per la manutenzione.
 </Siterow>
-<Siterow title="Dalla progettazione alla manutenzione" bg_color="2f-blue-200">
+<Siterow title="Dalla progettazione alla manutenzione" bg_color="bg-2f-blue-200">
 	<p class="text-base leading-relaxed pt-2">
 		La 2F Sicurezza è a disposizione dei suoi clienti nell'ambito degli impianti antincendio in
 		materia di:
