@@ -8,9 +8,16 @@ const config = {
 	preprocess: preprocess({
 		postcss: true
 	}),
-
 	kit: {
 		adapter: adapter()
+	},
+	prerender: {
+		concurrency: 1,
+		crawl: true,
+		default: true,
+		enabled: true,
+		entries: ['*'],
+		onError: 'fail'
 	}
 };
 
