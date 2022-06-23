@@ -12,7 +12,6 @@
 				class="grid grid-cols-1 md:grid-cols-2 gap-6"
 				name="contatti"
 				method="POST"
-				action="/"
 				data-netlify="true"
 			>
 				<input type="hidden" name="subject" value="Nuova contatto su 2f sicurezza" />
