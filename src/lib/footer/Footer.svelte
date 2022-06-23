@@ -9,12 +9,13 @@
 				>Contattaci per informazioni o un preventivo gratuito!</span
 			>
 			<form
-				class="grid grid-cols-1 gap-6"
+				class="grid grid-cols-1 md:grid-cols-2 gap-6"
 				name="2f-contatti"
 				method="POST"
 				action="/"
 				data-netlify="true"
 			>
+				<input type="hidden" name="subject" value="Nuova contatto su 2f sicurezza" />
 				<input
 					name="name"
 					type="text"
@@ -31,7 +32,7 @@
 					cols="30"
 					rows="3"
 					name="message"
-					class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black"
+					class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black md:col-span-2"
 					placeholder="Il tuo messaggio"
 				/>
 				<button class="flex w-max bg-2f-blue-500 p-2 rounded-sm" type="submit"
