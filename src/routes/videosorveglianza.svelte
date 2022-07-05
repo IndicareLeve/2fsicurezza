@@ -3,6 +3,8 @@
 	import CallUs from '../lib/callus/CallUs.svelte';
 </script>
 
+<title>Progettazione di sistemi di videosorveglianza | 2F Sicurezza</title>
+
 <div
 	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/AdobeStock_62452769.jpeg')]"
 />
