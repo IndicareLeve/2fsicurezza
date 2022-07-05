@@ -1,58 +1,100 @@
-<script context="module">
-	export const prerender = true;
+<script lang="ts">
+	import { enhance } from '$lib/form';
+
+	type Request = {
+		name: string;
+		email: string;
+		content: string;
+		isDone: boolean;
+		isPending: boolean;
+		isError: boolean;
+	};
+
+	export let request: Request = { name: '', email: '', content: '', isDone: false } as Request;
 </script>
 
 <footer class="pt-12">
 	<section class="contact-section">
-		<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
-			<span class="font-bold text-3xl md:text-center"
-				>Contattaci per informazioni o un preventivo gratuito!</span
-			>
-			<form
-				class="grid grid-cols-1 md:grid-cols-2 gap-6"
-				name="contatti"
-				method="POST"
-				data-netlify="true"
-			>
-				<input type="hidden" name="subject" value="Nuova contatto su 2f sicurezza" />
-				<input
-					name="name"
-					type="text"
-					placeholder="Nome"
-					class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
-				/>
-				<input
-					name="email"
-					type="email"
-					placeholder="Email"
-					class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
-				/>
-				<textarea
-					cols="30"
-					rows="3"
-					name="message"
-					class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black md:col-span-2"
-					placeholder="Il tuo messaggio"
-				/>
-				<button class="flex w-max bg-2f-blue-500 p-2 rounded-sm"
-					><svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-6 w-6 text-white"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-						stroke-width="2"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-						/>
-					</svg>
-					<span class="text-white pl-2">Invia Messaggio</span></button
+		{#if request.isDone === false}
+			<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
+				<span class="font-bold text-3xl md:text-center"
+					>Contattaci per informazioni o un preventivo gratuito!</span
 				>
-			</form>
-		</div>
+				<form
+					class="grid grid-cols-1 md:grid-cols-2 gap-6"
+					name="contatti"
+					action="https://serverless.indicareleve.me/api/send-email"
+					method="post"
+					use:enhance={{
+						error: async () => {
+							request.isError = true;
+						},
+						pending: async () => {
+							request.isPending = true;
+						},
+						result: async ({ form }) => {
+							form.reset();
+							request.isDone = true;
+						}
+					}}
+				>
+					<input type="hidden" name="sender" value="2fsicurezza" />
+					<input
+						value={request.name}
+						name="name"
+						type="text"
+						placeholder="Nome"
+						class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
+					/>
+					<input
+						value={request.email}
+						name="email"
+						type="email"
+						placeholder="Email"
+						class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
+					/>
+					<textarea
+						value={request.content}
+						cols="30"
+						rows="3"
+						name="content"
+						class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black md:col-span-2"
+						placeholder="Il tuo messaggio"
+					/>
+					<button
+						class="flex w-max bg-2f-blue-500 p-2 rounded-sm disabled:bg-gray-300"
+						type="submit"
+						disabled={request.isPending === true}
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6 text-white"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+							/>
+						</svg>
+						<span class="text-white pl-2">Invia Messaggio</span></button
+					>
+				</form>
+				{#if request.isError === true}
+					<span class="text-red-500"
+						>Qualcosa è andato storto, ti invitiamo a riprovare più tardi!</span
+					>
+				{/if}
+			</div>
+		{:else}
+			<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
+				<span class="font-bold text-3xl md:text-center"
+					>Grazie per averci contattato, riceverai una risposta al più presto!</span
+				>
+			</div>
+		{/if}
 	</section>
 	<section class="grid grid-cols-1 text-center bg-2f-blue-300 text-gray-100 py-4 space-y-2">
 		<span class="uppercase font-bold">2F Sicurezza</span>
