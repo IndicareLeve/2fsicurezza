@@ -23,7 +23,7 @@
 				<form
 					class="grid grid-cols-1 md:grid-cols-2 gap-6"
 					name="contatti"
-					action="http://localhost:5070/api/email/2fsicurezza"
+					action="https://utils.indicareleve.me/api/email/2fsicurezza"
 					method="post"
 					use:enhance={{
 						error: async () => {
