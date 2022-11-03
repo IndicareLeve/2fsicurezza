@@ -4,11 +4,12 @@
 
 	let isMenuOpen = false;
 	const toggleMenu = () => (isMenuOpen = !isMenuOpen);
+	import logo_2f from '$lib/images/logo-8f6a29bc-1920w.jpg';
 </script>
 
 <header class="sticky top-0 shadow-sm bg-white md:hidden">
 	<div class="flex justify-center relative py-2 px-8">
-		<img class="h-20" src="img/logo-8f6a29bc-1920w.jpg" alt="logo 2fsicurezza" />
+		<img class="h-20" src={logo_2f} alt="logo 2fsicurezza" />
 		<button type="button" on:click={toggleMenu}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +39,7 @@
 
 <header class="sticky top-0 shadow-sm bg-white hidden md:block">
 	<div class="flex justify-between py-2 px-8">
-		<img class="h-20" src="img/logo-8f6a29bc-1920w.jpg" alt="logo 2fsicurezza" />
+		<img class="h-20" src={logo_2f} alt="logo 2fsicurezza" />
 		<div class="flex items-center text-xl gap-3 font-thin">
 			<a class:active={$page.url.pathname === '/'} href="/">Home</a>
 			<a class:active={$page.url.pathname === '/antintrusione'} href="/antintrusione"

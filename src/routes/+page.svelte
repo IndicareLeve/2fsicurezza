@@ -1,12 +1,16 @@
 <script>
-	import Siterow from '$lib/siterow/Siterow.svelte';
-	import CallUs from '../lib/callus/CallUs.svelte';
+	import Siterow from '$lib/components/Siterow.svelte';
+	import CallUs from '$lib/components/CallUs.svelte';
+
+	import logo_combivox from '$lib/images/logo-combivox.png';
+	import logo_alhua from '$lib/images/LOGO_header.57e0e23.png';
+	import logo_hochiki from '$lib/images/logo_hochiki.png';
 </script>
 
 <title>Progettazione di sistemi antintrusione | 2F Sicurezza</title>
 
 <div
-	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/antifurti-2f-sicurezza-treviglio-001-1920w.webp')]"
+	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('$lib/images/antifurti-2f-sicurezza-treviglio-001-1920w.webp')]"
 >
 	<div
 		class="uppercase pl-5 pt-12 font-['Oswald'] tracking-wide text-[4vh] md:text-[6vh] mr-20 bg-gradient-to-r from-white via-white w-1/2 px-1 text-gray-800"
@@ -33,9 +37,9 @@
 <div class="p-5 bg-white">
 	<div class="text-3xl text-center font-['Oswald'] tracking-wide uppercase">I nostri marchi</div>
 	<div class="grid grid-cols-2 pt-5 justify-items-center container mx-auto">
-		<img class="h-10" src="/img/logo-combivox.png" alt="logo combivox" />
-		<img class="h-10" src="/img/LOGO_header.57e0e23.png" alt="logo combivox" />
-		<img class="h-10 col-span-2" src="/img/logo_hochiki.png" alt="logo combivox" />
+		<img class="h-10" src={logo_combivox} alt="logo combivox" />
+		<img class="h-10" src={logo_alhua} alt="logo alhua" />
+		<img class="h-10 col-span-2" src={logo_hochiki} alt="logo hochiki" />
 	</div>
 </div>
 <Siterow
