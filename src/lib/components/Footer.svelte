@@ -1,16 +1,16 @@
 <script lang="ts">
-	import { enhance } from '$lib/form';
+	import { enhance } from './form';
 
 	type Request = {
 		name: string;
 		email: string;
-		content: string;
+		message: string;
 		isDone: boolean;
 		isPending: boolean;
 		isError: boolean;
 	};
 
-	export let request: Request = { name: '', email: '', content: '', isDone: false } as Request;
+	export let request: Request = { name: '', email: '', message: '', isDone: false } as Request;
 </script>
 
 <footer class="pt-12">
@@ -23,7 +23,7 @@
 				<form
 					class="grid grid-cols-1 md:grid-cols-2 gap-6"
 					name="contatti"
-					action="https://serverless.indicareleve.me/api/send-email"
+					action="http://localhost:5070/api/email/2fsicurezza"
 					method="post"
 					use:enhance={{
 						error: async () => {
@@ -48,16 +48,16 @@
 					/>
 					<input
 						value={request.email}
-						name="email"
+						name="replyTo"
 						type="email"
 						placeholder="Email"
 						class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
 					/>
 					<textarea
-						value={request.content}
+						value={request.message}
 						cols="30"
 						rows="3"
-						name="content"
+						name="message"
 						class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black md:col-span-2"
 						placeholder="Il tuo messaggio"
 					/>
@@ -116,6 +116,7 @@
 			</svg>
 			<a
 				class="ml-1 underline"
+				rel="noreferrer"
 				href="https://www.google.com/maps/search/?api=1&query=Via%20Goito%2C%2022%2C%2024047%20Treviglio%20BG&query_place_id=ChIJ2bMftopJgUcRCb_HNeP3vWs"
 				target="_blank">Via Goito, 22 - 24047 - Treviglio (BG)</a
 			>

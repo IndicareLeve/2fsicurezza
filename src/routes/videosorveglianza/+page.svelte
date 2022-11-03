@@ -1,12 +1,12 @@
 <script>
-	import Siterow from '../lib/siterow/Siterow.svelte';
-	import CallUs from '../lib/callus/CallUs.svelte';
+	import Siterow from '$lib/components/Siterow.svelte';
+	import CallUs from '$lib/components/CallUs.svelte';
 </script>
 
 <title>Progettazione di sistemi di videosorveglianza | 2F Sicurezza</title>
 
 <div
-	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/AdobeStock_62452769.jpeg')]"
+	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/src/lib/images/AdobeStock_62452769.jpeg')]"
 />
 <CallUs />
 <Siterow
@@ -80,26 +80,26 @@
 <div class="p-5 text-center bg-white">
 	<div class="font-['Oswald'] tracking-wide text-3xl uppercase">I nostri lavori</div>
 	<div class="pt-2 flex overflow-x-scroll gap-5 h-[70vh] overflow-hidden">
-		<img src="/img/lavori/HelloIMG1655222543305.jpeg" alt="i nostri lavori 1" />
-		<img src="/img/lavori/HelloIMG1655222558339.jpeg" alt="i nostri lavori 2" />
-		<img src="/img/lavori/HelloIMG1655222567280.jpeg" alt="i nostri lavori 3" />
-		<img src="/img/lavori/HelloIMG1655222576481.jpeg" alt="i nostri lavori 4" />
-		<img src="/img/lavori/HelloIMG1655222581308.jpeg" alt="i nostri lavori 5" />
-		<img src="/img/lavori/HelloIMG1655222586405.jpeg" alt="i nostri lavori 6" />
-		<img src="/img/lavori/HelloIMG1655222596066.jpeg" alt="i nostri lavori 7" />
-		<img src="/img/lavori/HelloIMG1655222596572.jpeg" alt="i nostri lavori 8" />
-		<img src="/img/lavori/HelloIMG1655222596944.jpeg" alt="i nostri lavori 9" />
-		<img src="/img/lavori/HelloIMG1655222597192.jpeg" alt="i nostri lavori 10" />
-		<img src="/img/lavori/HelloIMG1655222597443.jpeg" alt="i nostri lavori 11" />
-		<img src="/img/lavori/HelloIMG1655222597687.jpeg" alt="i nostri lavori 12" />
-		<img src="/img/lavori/HelloIMG1655222597930.jpeg" alt="i nostri lavori 13" />
-		<img src="/img/lavori/HelloIMG1655222599346.jpeg" alt="i nostri lavori 14" />
-		<img src="/img/lavori/HelloIMG1655222599816.jpeg" alt="i nostri lavori 15" />
-		<img src="/img/lavori/HelloIMG1655222600061.jpeg" alt="i nostri lavori 16" />
-		<img src="/img/lavori/HelloIMG1655222600304.jpeg" alt="i nostri lavori 17" />
-		<img src="/img/lavori/HelloIMG1655222600548.jpeg" alt="i nostri lavori 18" />
-		<img src="/img/lavori/HelloIMG1655222601064.jpeg" alt="i nostri lavori 19" />
-		<img src="/img/lavori/HelloIMG1655222601309.jpeg" alt="i nostri lavori 20" />
-		<img src="/img/lavori/HelloIMG1655222601555.jpeg" alt="i nostri lavori 21" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222543305.jpeg" alt="i nostri lavori 1" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222558339.jpeg" alt="i nostri lavori 2" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222567280.jpeg" alt="i nostri lavori 3" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222576481.jpeg" alt="i nostri lavori 4" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222581308.jpeg" alt="i nostri lavori 5" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222586405.jpeg" alt="i nostri lavori 6" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222596066.jpeg" alt="i nostri lavori 7" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222596572.jpeg" alt="i nostri lavori 8" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222596944.jpeg" alt="i nostri lavori 9" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222597192.jpeg" alt="i nostri lavori 10" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222597443.jpeg" alt="i nostri lavori 11" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222597687.jpeg" alt="i nostri lavori 12" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222597930.jpeg" alt="i nostri lavori 13" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222599346.jpeg" alt="i nostri lavori 14" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222599816.jpeg" alt="i nostri lavori 15" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222600061.jpeg" alt="i nostri lavori 16" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222600304.jpeg" alt="i nostri lavori 17" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222600548.jpeg" alt="i nostri lavori 18" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222601064.jpeg" alt="i nostri lavori 19" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222601309.jpeg" alt="i nostri lavori 20" />
+		<img src="/src/lib/images/lavori/HelloIMG1655222601555.jpeg" alt="i nostri lavori 21" />
 	</div>
 </div>

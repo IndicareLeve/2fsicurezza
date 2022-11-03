@@ -1,12 +1,12 @@
 <script>
-	import Siterow from '../lib/siterow/Siterow.svelte';
-	import CallUs from '../lib/callus/CallUs.svelte';
+	import Siterow from '$lib/components/Siterow.svelte';
+	import CallUs from '$lib/components/CallUs.svelte';
 </script>
 
 <title>Progettazione e manutenzione di sistemi e impianti antincendio | 2F Sicurezza</title>
 
 <div
-	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/img/antincendio/AdobeStock_507564262.jpeg')]"
+	class="sticky top-24 -z-10 h-[35vh] flex items-stretch bg-cover bg-center bg-[url('/src/lib/images/antincendio/AdobeStock_507564262.jpeg')]"
 />
 <CallUs />
 <Siterow
@@ -51,11 +51,11 @@
 <div class="p-5 text-center bg-white">
 	<div class="font-['Oswald'] tracking-wide text-3xl uppercase" />
 	<div class="grid grid-cols-2 items-center gap-3">
-		<img src="/img/antincendio/1-868f1797.jpg" alt="antincendio 1" />
-		<img src="/img/antincendio/6.png" alt="antincendio 6" />
-		<img src="/img/antincendio/2.png" alt="antincendio 2" />
-		<img src="/img/antincendio/3.png" alt="antincendio 3" />
-		<img src="/img/antincendio/4.png" alt="antincendio 4" />
-		<img src="/img/antincendio/5.png" alt="antincendio 5" />
+		<img src="/src/lib/images/antincendio/1-868f1797.jpg" alt="antincendio 1" />
+		<img src="/src/lib/images/antincendio/6.png" alt="antincendio 6" />
+		<img src="/src/lib/images/antincendio/2.png" alt="antincendio 2" />
+		<img src="/src/lib/images/antincendio/3.png" alt="antincendio 3" />
+		<img src="/src/lib/images/antincendio/4.png" alt="antincendio 4" />
+		<img src="/src/lib/images/antincendio/5.png" alt="antincendio 5" />
 	</div>
 </div>
