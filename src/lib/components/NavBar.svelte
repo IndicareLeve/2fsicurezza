@@ -28,6 +28,7 @@
 			class="text-lg text-center absolute w-full bg-white text-gray-700 font-semibold uppercase"
 			transition:slide
 			on:click={toggleMenu}
+			on:keypress={toggleMenu}
 		>
 			<li class="p-4 mx-4 border-t"><a href="/">Home</a></li>
 			<li class="p-4 mx-4 border-t"><a href="/antintrusione">Antintrusione</a></li>

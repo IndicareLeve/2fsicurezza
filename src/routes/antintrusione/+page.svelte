@@ -2,70 +2,81 @@
 	import Siterow from '$lib/components/Siterow.svelte';
 	import CallUs from '$lib/components/CallUs.svelte';
 
+	import Alarm_wilma from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-006.jpg';
+	import Alarm_Amica64 from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-007.jpg';
+	import Alarm_Amica128 from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-008.jpg';
+	import Alarm_Amica324 from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-009.jpg';
+	import Alarm_Elisa24GSM from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-010.jpg';
+	import Alarm_ElisaGSM from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-011.jpg';
+	import Alarm_Eva824 from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-012.jpg';
+	import Alarm_MidyaGSM from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-013.jpg';
+	import Alarm_Wilma from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-014.jpg';
+	import Alarm_WilmaMicro from '$lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-015.jpg';
+
 	let alarms = [
 		{
 			link: 'http://combivox.it/product/wilma/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-006.jpg',
+			image: Alarm_wilma,
 			title: 'Novità',
 			description:
 				'Centrale di allarme wireless 868 MHz, per impianti di piccola e media dimensione'
 		},
 		{
 			link: 'http://combivox.it/product/amica-64/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-007.jpg',
+			image: Alarm_Amica64,
 			title: 'Amica 64',
 			description:
 				'Centrale 8 zone espandibile fino a 64 per impianti di piccole e medie dimensioni'
 		},
 		{
 			link: 'http://combivox.it/product/amica-128/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-008.jpg',
+			image: Alarm_Amica128,
 			title: 'Amica 128',
 			description:
 				'Centrale 8 zone espandibile fino a 128 per impianti di medie e grandi dimensioni'
 		},
 		{
 			link: 'http://combivox.it/product/amica-324/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-009.jpg',
+			image: Alarm_Amica324,
 			title: 'Amica 324',
 			description: 'Centrale 8 zone espandibile fino a 334 per impianti di grandi dimensioni'
 		},
 		{
 			link: 'http://combivox.it/product/elisa-24/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-010.jpg',
+			image: Alarm_Elisa24GSM,
 			title: 'Elisa 24 GSM',
 			description:
 				'Centrale GSM espandibile a 24 zone per impianti di sicurezza di piccole e medie dimensioni'
 		},
 		{
 			link: 'http://combivox.it/product/elisa/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-011.jpg',
+			image: Alarm_ElisaGSM,
 			title: 'Elisa GSM',
 			description: 'Centrale GSM 8 zone, ideale per impianti di piccole dimensioni'
 		},
 		{
 			link: 'http://combivox.it/product/eva-8-24/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-012.jpg',
+			image: Alarm_Eva824,
 			title: 'Eva 8.24',
 			description:
 				'Centrale 8 zone espandibile fino a 24 ideale per impianti di piccole e medie dimensioni'
 		},
 		{
 			link: 'http://combivox.it/product/midya/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-013.jpg',
+			image: Alarm_MidyaGSM,
 			title: 'Midya GSM',
 			description: 'Centrale GSM 6 zone, ideale per piccoli impianti di sicurezza'
 		},
 		{
 			link: 'http://combivox.it/product/wilma/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-014.jpg',
+			image: Alarm_Wilma,
 			title: 'Wilma',
 			description:
 				'Centrale di allarme wireless 868 MHz, per impianti di piccola e media dimensione'
 		},
 		{
 			link: 'http://combivox.it/product/wilma-micro-ii/',
-			image: '/src/lib/images/antintrusione/antifurti-2f-sicurezza-treviglio-015.jpg',
+			image: Alarm_WilmaMicro,
 			title: 'Wilma Micro II',
 			description: 'Centrale radio 868 MHz per rapide installazioni'
 		}

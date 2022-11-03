@@ -1,6 +1,13 @@
 <script>
 	import Siterow from '$lib/components/Siterow.svelte';
 	import CallUs from '$lib/components/CallUs.svelte';
+
+	import Antincendio1 from '$lib/images/antincendio/1-868f1797.jpg';
+	import Antincendio2 from '$lib/images/antincendio/2.png';
+	import Antincendio3 from '$lib/images/antincendio/3.png';
+	import Antincendio4 from '$lib/images/antincendio/4.png';
+	import Antincendio5 from '$lib/images/antincendio/5.png';
+	import Antincendio6 from '$lib/images/antincendio/6.png';
 </script>
 
 <title>Progettazione e manutenzione di sistemi e impianti antincendio | 2F Sicurezza</title>
@@ -51,11 +58,11 @@
 <div class="p-5 text-center bg-white">
 	<div class="font-['Oswald'] tracking-wide text-3xl uppercase" />
 	<div class="grid grid-cols-2 items-center gap-3">
-		<img src="/src/lib/images/antincendio/1-868f1797.jpg" alt="antincendio 1" />
-		<img src="/src/lib/images/antincendio/6.png" alt="antincendio 6" />
-		<img src="/src/lib/images/antincendio/2.png" alt="antincendio 2" />
-		<img src="/src/lib/images/antincendio/3.png" alt="antincendio 3" />
-		<img src="/src/lib/images/antincendio/4.png" alt="antincendio 4" />
-		<img src="/src/lib/images/antincendio/5.png" alt="antincendio 5" />
+		<img src={Antincendio1} alt="antincendio 1" />
+		<img src={Antincendio6} alt="antincendio 6" />
+		<img src={Antincendio2} alt="antincendio 2" />
+		<img src={Antincendio3} alt="antincendio 3" />
+		<img src={Antincendio4} alt="antincendio 4" />
+		<img src={Antincendio5} alt="antincendio 5" />
 	</div>
 </div>
