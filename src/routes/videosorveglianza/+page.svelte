@@ -1,6 +1,28 @@
 <script>
 	import Siterow from '$lib/components/Siterow.svelte';
 	import CallUs from '$lib/components/CallUs.svelte';
+
+	import Lavori1 from '$lib/images/lavori/HelloIMG1655222543305.jpeg';
+	import Lavori2 from '$lib/images/lavori/HelloIMG1655222558339.jpeg';
+	import Lavori3 from '$lib/images/lavori/HelloIMG1655222567280.jpeg';
+	import Lavori4 from '$lib/images/lavori/HelloIMG1655222576481.jpeg';
+	import Lavori5 from '$lib/images/lavori/HelloIMG1655222581308.jpeg';
+	import Lavori6 from '$lib/images/lavori/HelloIMG1655222586405.jpeg';
+	import Lavori7 from '$lib/images/lavori/HelloIMG1655222596066.jpeg';
+	import Lavori8 from '$lib/images/lavori/HelloIMG1655222596572.jpeg';
+	import Lavori9 from '$lib/images/lavori/HelloIMG1655222596944.jpeg';
+	import Lavori10 from '$lib/images/lavori/HelloIMG1655222597192.jpeg';
+	import Lavori11 from '$lib/images/lavori/HelloIMG1655222597443.jpeg';
+	import Lavori12 from '$lib/images/lavori/HelloIMG1655222597687.jpeg';
+	import Lavori13 from '$lib/images/lavori/HelloIMG1655222597930.jpeg';
+	import Lavori14 from '$lib/images/lavori/HelloIMG1655222599346.jpeg';
+	import Lavori15 from '$lib/images/lavori/HelloIMG1655222599816.jpeg';
+	import Lavori16 from '$lib/images/lavori/HelloIMG1655222600061.jpeg';
+	import Lavori17 from '$lib/images/lavori/HelloIMG1655222600304.jpeg';
+	import Lavori18 from '$lib/images/lavori/HelloIMG1655222600548.jpeg';
+	import Lavori19 from '$lib/images/lavori/HelloIMG1655222601064.jpeg';
+	import Lavori20 from '$lib/images/lavori/HelloIMG1655222601309.jpeg';
+	import Lavori21 from '$lib/images/lavori/HelloIMG1655222601555.jpeg';
 </script>
 
 <title>Progettazione di sistemi di videosorveglianza | 2F Sicurezza</title>
@@ -80,26 +102,32 @@
 <div class="p-5 text-center bg-white">
 	<div class="font-['Oswald'] tracking-wide text-3xl uppercase">I nostri lavori</div>
 	<div class="pt-2 flex overflow-x-scroll gap-5 h-[70vh] overflow-hidden">
-		<img src="/src/lib/images/lavori/HelloIMG1655222543305.jpeg" alt="i nostri lavori 1" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222558339.jpeg" alt="i nostri lavori 2" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222567280.jpeg" alt="i nostri lavori 3" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222576481.jpeg" alt="i nostri lavori 4" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222581308.jpeg" alt="i nostri lavori 5" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222586405.jpeg" alt="i nostri lavori 6" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222596066.jpeg" alt="i nostri lavori 7" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222596572.jpeg" alt="i nostri lavori 8" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222596944.jpeg" alt="i nostri lavori 9" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222597192.jpeg" alt="i nostri lavori 10" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222597443.jpeg" alt="i nostri lavori 11" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222597687.jpeg" alt="i nostri lavori 12" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222597930.jpeg" alt="i nostri lavori 13" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222599346.jpeg" alt="i nostri lavori 14" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222599816.jpeg" alt="i nostri lavori 15" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222600061.jpeg" alt="i nostri lavori 16" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222600304.jpeg" alt="i nostri lavori 17" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222600548.jpeg" alt="i nostri lavori 18" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222601064.jpeg" alt="i nostri lavori 19" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222601309.jpeg" alt="i nostri lavori 20" />
-		<img src="/src/lib/images/lavori/HelloIMG1655222601555.jpeg" alt="i nostri lavori 21" />
+		<img src={Lavori1} alt="i nostri lavori 1" />
+		<img src={Lavori2} alt="i nostri lavori 2" />
+		<img src={Lavori3} alt="i nostri lavori 3" />
+		<img src={Lavori4} alt="i nostri lavori 4" />
+		<img src={Lavori5} alt="i nostri lavori 5" />
+		<img src={Lavori6} alt="i nostri lavori 6" />
+		<img src={Lavori7} alt="i nostri lavori 7" />
+		<!-- <img src={Lavori8} alt="i nostri lavori 8" />
+		<img src={Lavori9} alt="i nostri lavori 9" />
+		<img src={Lavori10} alt="i nostri lavori 10" />
+		<img src={Lavori11} alt="i nostri lavori 11" />
+		<img src={Lavori12} alt="i nostri lavori 12" />
+		<img src={Lavori13} alt="i nostri lavori 13" />
+		<img src={Lavori14} alt="i nostri lavori 14" />
+		<img src={Lavori15} alt="i nostri lavori 15" />
+		<img src={Lavori16} alt="i nostri lavori 16" />
+		<img src={Lavori17} alt="i nostri lavori 17" />
+		<img src={Lavori18} alt="i nostri lavori 18" />
+		<img src={Lavori19} alt="i nostri lavori 19" />
+		<img src={Lavori20} alt="i nostri lavori 20" />
+		<img src={Lavori21} alt="i nostri lavori 21" /> -->
 	</div>
 </div>
+
+<style>
+	img {
+		object-fit: cover;
+	}
+</style>
