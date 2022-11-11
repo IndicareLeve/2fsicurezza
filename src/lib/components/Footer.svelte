@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { enhance } from './form';
+	import { enhance } from '$app/forms';
+	import { PUBLIC_URL } from '$env/static/public';
 
 	type Request = {
 		name: string;
@@ -23,28 +24,32 @@
 				<form
 					class="grid grid-cols-1 md:grid-cols-2 gap-6"
 					name="contatti"
-					action="https://utils.indicareleve.me/api/email/2fsicurezza"
+					action={PUBLIC_URL}
 					method="post"
-					use:enhance={{
-						error: async () => {
-							request.isError = true;
-						},
-						pending: async () => {
-							request.isPending = true;
-						},
-						result: async ({ form }) => {
-							form.reset();
+					use:enhance={({ form, data, action, cancel }) => {
+						// `form` is the `<form>` element
+						// `data` is its `FormData` object
+						// `action` is the URL to which the form is posted
+						// `cancel()` will prevent the submission
+						request.isPending = true;
+						if (data.get('honey'))
+							cancel()
+
+						return async ({ result, update }) => {
 							request.isDone = true;
-						}
+							// `result` is an `ActionResult` object
+							// `update` is a function which triggers the logic that would be triggered if this callback wasn't set
+						};
 					}}
 				>
-					<input type="hidden" name="sender" value="2fsicurezza" />
+					<input type="hidden" name="honey" />
 					<input
 						value={request.name}
 						name="name"
 						type="text"
 						placeholder="Nome"
 						class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
+						required
 					/>
 					<input
 						value={request.email}
@@ -52,6 +57,7 @@
 						type="email"
 						placeholder="Email"
 						class="font-thin w-full py-2 border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-black"
+						required
 					/>
 					<textarea
 						value={request.message}
@@ -60,6 +66,7 @@
 						name="message"
 						class="font-thin w-full border-0 border-b border-gray-200 focus:ring-0 focus:outline-0 focus:border-b-black md:col-span-2"
 						placeholder="Il tuo messaggio"
+						required
 					/>
 					<button
 						class="flex w-max bg-2f-blue-500 p-2 rounded-sm disabled:bg-gray-300"

@@ -2,7 +2,7 @@
 FROM node:16-alpine
 
 WORKDIR /app
-
+ENV PUBLIC_URL=https://2fsicurezza.it/
 # copy everything to the container
 COPY . .
 
