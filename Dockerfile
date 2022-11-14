@@ -2,7 +2,7 @@
 FROM node:16-alpine
 
 WORKDIR /app
-ENV PUBLIC_URL=https://2fsicurezza.it/
+ENV PUBLIC_URL=https://utils.indicareleve.me/api/email/2fsicurezza
 # copy everything to the container
 COPY . .
 
@@ -11,7 +11,7 @@ RUN npm ci
 
 # remove potential security issues
 RUN npm audit fix
-    
+
 # build SvelteKit app
 RUN npm run build
 
