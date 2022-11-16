@@ -9,11 +9,11 @@
 <Siterow title="Promozione sistema antifurto Combivox" bg_color="bg-2f-blue-200">
 	2F Sicurezza grazie all'esperienza maturata negli anni è orgogliosa di proporre una promozione
 	<span class="underline">tutto incluso</span>
-	che include:
+	che prevede:
 	<ul class="list-disc">
 		<li>Installazione</li>
 		<li>Configurazione</li>
-		<li>Sistema Cloud</li>
+		<li>Cloud 36 mesi</li>
 		<li>Garanzia 24 mesi</li>
 	</ul>
 </Siterow>
