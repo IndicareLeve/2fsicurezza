@@ -1,6 +1,7 @@
 <script>
 	import Siterow from '$lib/components/Siterow.svelte';
 	import CallUs from '$lib/components/CallUs.svelte';
+	import News from '$lib/components/News.svelte';
 
 	import logo_combivox from '$lib/images/logo-combivox.png';
 	import logo_alhua from '$lib/images/LOGO_header.57e0e23.png';
@@ -65,3 +66,5 @@
 	Sicurezza opera sempre nella massima trasparenza offrendo preventivi del tutto gratuiti e
 	dettagliati e con la garanzia di una tempistica certa nella consegna dei lavori finiti.
 </Siterow>
+
+<News />

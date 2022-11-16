@@ -34,6 +34,7 @@
 			<li class="p-4 mx-4 border-t"><a href="/antintrusione">Antintrusione</a></li>
 			<li class="p-4 mx-4 border-t"><a href="/videosorveglianza">Videosorveglianza</a></li>
 			<li class="p-4 mx-4 border-y"><a href="/impianti-antincendio">Impianti Antincendio</a></li>
+			<li class="p-4 mx-4 border-y"><a href="/promo-combivox">Offerte</a></li>
 		</ul>
 	{/if}
 </header>
@@ -52,6 +53,7 @@
 			<a class:active={$page.url.pathname === '/impianti-antincendio'} href="/impianti-antincendio"
 				>Impianti antincendio</a
 			>
+			<a class:active={$page.url.pathname === '/promo-combivox'} href="/promo-combivox">Offerte</a>
 		</div>
 	</div>
 </header>
