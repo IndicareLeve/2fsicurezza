@@ -32,8 +32,7 @@
 						// `action` is the URL to which the form is posted
 						// `cancel()` will prevent the submission
 						request.isPending = true;
-						if (data.get('honey'))
-							cancel()
+						if (data.get('honey')) cancel();
 
 						return async ({ result, update }) => {
 							request.isDone = true;
@@ -105,28 +104,65 @@
 	</section>
 	<section class="grid grid-cols-1 text-center bg-2f-blue-300 text-gray-100 py-4 space-y-2">
 		<span class="uppercase font-bold">2F Sicurezza</span>
-		<div class="flex justify-center">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="h-6 w-6"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-				stroke-width="2"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-				/>
-				<path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-			</svg>
-			<a
-				class="ml-1 underline"
-				rel="noreferrer"
-				href="https://www.google.com/maps/search/?api=1&query=Via%20Goito%2C%2022%2C%2024047%20Treviglio%20BG&query_place_id=ChIJ2bMftopJgUcRCb_HNeP3vWs"
-				target="_blank">Via Goito, 22 - 24047 - Treviglio (BG)</a
-			>
+		<div>
+			<div class="text-xs">Sede di Treviglio:</div>
+			<div class="flex justify-center">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-6 w-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+					/>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+					/>
+				</svg>
+				<a
+					class="ml-1 underline"
+					rel="noreferrer"
+					href="https://goo.gl/maps/WxXCTUhLjtQv8Aic6"
+					target="_blank">Via Goito, 22 - 24047 Treviglio (BG)</a
+				>
+			</div>
+		</div>
+		<div>
+			<div class="text-xs">Sede di Bergamo:</div>
+			<div class="flex justify-center">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-6 w-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+					/>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+					/>
+				</svg>
+				<a
+					class="ml-1 underline"
+					rel="noreferrer"
+					href="https://goo.gl/maps/ZogyDiWT4QMGMe5E8"
+					target="_blank">Via della Clementina, 2 - 24125 Bergamo</a
+				>
+			</div>
 		</div>
 		<div class="flex justify-center">
 			<svg
