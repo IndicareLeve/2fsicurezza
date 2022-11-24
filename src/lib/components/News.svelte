@@ -1,7 +1,7 @@
 <script>
 	import Kit_wilma_pro from '$lib/images/kit-wilma-pro.jpg';
 
-	let isModalOpen = false;
+	let isModalOpen = true;
 	const toggleModal = () => (isModalOpen = !isModalOpen);
 </script>
 
