@@ -7,7 +7,7 @@
 
 <div
 	class="relative z-10"
-	class:hidden={isModalOpen}
+	class:hidden={!isModalOpen}
 	aria-labelledby="modal-title"
 	role="dialog"
 	aria-modal="true"
