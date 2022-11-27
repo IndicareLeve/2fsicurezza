@@ -1,10 +1,9 @@
 name: Build and Publish Docker Image
 
 on:
-  push:
+  pull_request:
     branches:
       - 'main'
-  pull_request:
 
 env:
   IMAGE: registry.indicareleve.me/2fsicurezza
@@ -12,14 +11,8 @@ env:
 jobs:
   docker:
     environment:
-      if: github.event_name == 'pull_request'
       name: Prod
       url: https://test.2fsicurezza.it
-
-    environment:
-      if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-      name: Test
-      url: https://2fsicurezza.it
 
 
     runs-on: ubuntu-latest
@@ -39,19 +32,19 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
     
     - name: Build and push testing
-      if: github.event_name == 'pull_request'
       uses: docker/build-push-action@v3
+      env:
+        PUBLIC_HCAPTCHA_SITEKEY: ${{ secrets.PUBLIC_HCAPTCHA_SITEKEY }}
+        PUBLIC_SITE_URL: ${{ secrets.PUBLIC_SITE_URL }}
+        
+        HCAPTCHA_SECRETKEY: ${{ secrets.HCAPTCHA_SECRETKEY }}
+
+        MAILERSEND_APIKEY: ${{ secrets.MAILERSEND_APIKEY }}
+        MAILERSEND_TEMPLATEID: ${{ secrets.MAILERSEND_TEMPLATEID }}
+        MAILERSEND_TO: ${{ secrets.MAILERSEND_TO }}
+        MAILERSEND_FROM: ${{ secrets.MAILERSEND_FROM }}
       with:
         push: true
         tags: |
               ${{ env.IMAGE }}:${{ env.BUILD_ID }}-testing-${{ github.event.pull_request.head.ref }}
               ${{ env.IMAGE }}:testing
-
-    - name: Build and push prod
-      if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-      uses: docker/build-push-action@v3
-      with:
-        push: true
-        tags: |
-              ${{ env.IMAGE }}:${{ env.BUILD_ID }}
-              ${{ env.IMAGE }}:latest
