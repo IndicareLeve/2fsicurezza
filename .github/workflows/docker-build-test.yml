@@ -11,7 +11,7 @@ env:
 jobs:
   docker:
     environment:
-      name: Prod
+      name: Test
       url: https://test.2fsicurezza.it
 
 
