@@ -1,13 +1,13 @@
 <script>
 	import Kit_wilma_pro from '$lib/images/kit-wilma-pro.jpg';
 
-	let isModalOpen = false;
+	let isModalOpen = true;
 	const toggleModal = () => (isModalOpen = !isModalOpen);
 </script>
 
 <div
 	class="relative z-10"
-	class:hidden={isModalOpen}
+	class:hidden={!isModalOpen}
 	aria-labelledby="modal-title"
 	role="dialog"
 	aria-modal="true"

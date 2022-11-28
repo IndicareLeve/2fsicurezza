@@ -2,7 +2,6 @@
 FROM node:16-alpine
 
 WORKDIR /app
-ENV PUBLIC_URL=https://utils.indicareleve.me/api/email/2fsicurezza
 # copy everything to the container
 COPY . .
 
