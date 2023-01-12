@@ -78,7 +78,9 @@
 	<script src="https://js.hcaptcha.com/1/api.js?render=explicit&hl=it" async defer></script>
 </svelte:head>
 
-<section class="contact-section">
+<section
+	style="background-image: var(--background-image, linear-gradient(to bottom, #ffffff 50%, #3b76a2 50%))"
+>
 	{#if request.done === false}
 		<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
 			<span class="font-bold text-3xl md:text-center">

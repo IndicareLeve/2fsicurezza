@@ -19,9 +19,7 @@
 		La vostra sicurezza, <br /> La nostra priorità!
 	</div>
 </div>
-<div>
-	<Form />
-</div>
+<Form --background-image="linear-gradient(to bottom, #ffffff 50%, #d9ebff 50%)" />
 <CallUs />
 <Siterow bg_color="bg-2f-blue-200">
 	2F Sicurezza di Treviglio è un'azienda specializzata nella posa, programmazione e gestione di
