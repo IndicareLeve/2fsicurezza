@@ -67,11 +67,11 @@
 								</p>
 							</div>
 							<div class="mt-4 flex justify-center">
-								<a
-									href="/promo-combivox"
+								<button
+									on:click={toggleModal}
 									type="button"
 									class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-2f-blue-500 text-white px-4 py-2 text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-									>Maggiori informazioni</a
+									>Maggiori informazioni</button
 								>
 							</div>
 						</div>

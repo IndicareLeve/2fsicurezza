@@ -81,9 +81,11 @@
 <section class="contact-section">
 	{#if request.done === false}
 		<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
-			<span class="font-bold text-3xl md:text-center"
-				>Contattaci per informazioni o un preventivo gratuito!</span
-			>
+			<span class="font-bold text-3xl md:text-center">
+				Hai bisogno di più informazioni?
+				<br />Compila il form sottostante e verrai ricontattato quanto prima da uno dei nostri
+				agenti.
+			</span>
 			<form
 				class="grid grid-cols-1 md:grid-cols-2 gap-6"
 				name="contatti"
