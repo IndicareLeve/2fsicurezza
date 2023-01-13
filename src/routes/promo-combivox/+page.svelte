@@ -2,6 +2,7 @@
 	import Siterow from '$lib/components/Siterow.svelte';
 	import Kit_wilma_pro from '$lib/images/kit-wilma-pro.jpg';
 	import Kit_wilma_pro_video from '$lib/images/kit-wilma-pro-video.jpg';
+	import News from '$lib/components/News.svelte';
 </script>
 
 <title>Promo Combivox | 2F Sicurezza</title>
@@ -49,3 +50,5 @@
 	title="Nessun abbonamento ricorrente da pagare, dopo l'installazione l'impianto è completamente vostro!"
 	bg_color="bg-gray-100"
 />
+
+<News />

@@ -1,7 +1,7 @@
 <script>
 	import Siterow from '$lib/components/Siterow.svelte';
 	import CallUs from '$lib/components/CallUs.svelte';
-	import News from '$lib/components/News.svelte';
+	import Form from '$lib/components/Form.svelte';
 
 	import logo_combivox from '$lib/images/logo-combivox.png';
 	import logo_alhua from '$lib/images/LOGO_header.57e0e23.png';
@@ -19,6 +19,7 @@
 		La vostra sicurezza, <br /> La nostra priorità!
 	</div>
 </div>
+<Form --background-image="linear-gradient(to bottom, #ffffff 50%, #d9ebff 50%)" />
 <CallUs />
 <Siterow bg_color="bg-2f-blue-200">
 	2F Sicurezza di Treviglio è un'azienda specializzata nella posa, programmazione e gestione di
@@ -66,5 +67,3 @@
 	Sicurezza opera sempre nella massima trasparenza offrendo preventivi del tutto gratuiti e
 	dettagliati e con la garanzia di una tempistica certa nella consegna dei lavori finiti.
 </Siterow>
-
-<News />

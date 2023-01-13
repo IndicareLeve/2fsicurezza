@@ -1,9 +1,12 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import Form from '$lib/components/Form.svelte';
 </script>
 
 <footer class="pt-12">
-	<Form />
+	{#if $page.url.pathname != '/'}
+		<Form />
+	{/if}
 	<section class="grid grid-cols-1 text-center bg-2f-blue-300 text-gray-100 py-4 space-y-2">
 		<span class="uppercase font-bold">2F Sicurezza</span>
 		<div>
