@@ -84,9 +84,7 @@
 	{#if request.done === false}
 		<div class="container mx-auto bg-white shadow-xl p-8 grid grid-cols-1 gap-8">
 			<span class="font-bold text-3xl md:text-center">
-				Hai bisogno di più informazioni?
-				<br />Compila il form sottostante e verrai ricontattato quanto prima da uno dei nostri
-				agenti.
+				Per più informazioni compila il form, rispondiamo entro 24h
 			</span>
 			<form
 				class="grid grid-cols-1 md:grid-cols-2 gap-6"
